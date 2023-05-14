@@ -1,0 +1,9 @@
+pandoc: 2.19.2
+pkgdown: 2.0.7
+pkgdown_sha: ~
+articles: {}
+last_built: 2023-05-14T14:02Z
+urls:
+  reference: https://espinielli.github.io/calcalr/reference
+  article: https://espinielli.github.io/calcalr/articles
+
