@@ -13,9 +13,10 @@ knitr::opts_chunk$set(
 )
 ```
 
-**WORK in PROGRESS**
 
 # calcalr
+
+**WORK in PROGRESS**
 
 <!-- badges: start -->
 <!-- badges: end -->

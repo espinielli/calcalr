@@ -1,9 +1,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-**WORK in PROGRESS**
-
 # calcalr
+
+**WORK in PROGRESS**
 
 <!-- badges: start -->
 <!-- badges: end -->

@@ -22,4 +22,4 @@ Suggests:
 Config/testthat/edition: 3
 Imports: 
     magrittr
-URL: https://espinielli.github.io/calcalr/
+URL: https://espinielli.github.io/calcalr/, https://github.com/espinielli/calcalr
