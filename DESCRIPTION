@@ -1,0 +1,24 @@
+Type: Package
+Package: calcalr
+Title: Calendars of the World
+Version: 0.0.9000
+Authors@R: 
+    c(person(given = "Enrico",
+             family = "Spinielli",
+             role = c("aut", "cre"),
+             email = "enrico.spinielli@gmail.com",
+             comment = c(ORCID = "0000-0001-8584-9131")))
+Maintainer: Enrico Spinielli <enrico.spinielli@gmail.com>
+Description: An R implementation of the algorithms described in the book
+    Edward M. Reingold and Nachum Dershowitz "Calendrical Calculations:
+    the Ultimate Edition".
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Roxygen: list(markdown = TRUE)
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    magrittr
