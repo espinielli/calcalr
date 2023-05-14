@@ -23,10 +23,10 @@ kday_after(1, -61387)
 }
 }
 \seealso{
-Other cycles of days: 
+Other cycles of days helpers: 
 \code{\link{day_of_week_from_fixed}()},
 \code{\link{kday_before}()},
 \code{\link{kday_nearest}()},
 \code{\link{kday_on_or_before}()}
 }
-\concept{cycles of days}
+\concept{cycles of days helpers}

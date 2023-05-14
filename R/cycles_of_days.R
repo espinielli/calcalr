@@ -26,7 +26,7 @@ name_of_day_of_week <- function(day_of_week) {
 #'
 #' @return an integer indicating the day of the week
 #' @export
-#' @family cycles of days
+#' @family cycles of days helpers
 #' @examples
 #' \dontrun{
 #' day_of_week_from_fixed(253427)
@@ -43,7 +43,7 @@ day_of_week_from_fixed <- function(date) {
 #'
 #' @return a fixed day number
 #' @export
-#' @family cycles of days
+#' @family cycles of days helpers
 #' @examples
 #' \dontrun{
 #' kday_on_or_before(1, -61387)
@@ -59,7 +59,7 @@ kday_on_or_before <- function(k, date) {
 #'
 #' @return a fixed day number
 #' @export
-#' @family cycles of days
+#' @family cycles of days helpers
 #' @examples
 #' \dontrun{
 #' kday_nearest(1, -61387)
@@ -74,7 +74,7 @@ kday_nearest <- function(k, date) {
 #'
 #' @return a fixed day number
 #' @export
-#' @family cycles of days
+#' @family cycles of days helpers
 #' @examples
 #' \dontrun{
 #' kday_after(1, -61387)
@@ -90,7 +90,7 @@ kday_after <- function(k, date) {
 #'
 #' @return a fixed day number
 #' @export
-#' @family cycles of days
+#' @family cycles of days helpers
 #' @examples
 #' \dontrun{
 #' kday_before(1, -61387)
