@@ -11,5 +11,12 @@ test_that("days of week", {
 
 
 test_that("kdays of week", {
-  expect_equal(kday_on_or_before(1, -61387),  -61389)
+  expect_equal(kday_on_or_before(1, -61387), -61389)
+  expect_equal(kday_on_or_before(3, -61387), -61387)
+
+  expect_equal(kday_nearest(1, -61387), -61389)
+  expect_equal(kday_nearest(3, -61387), -61387)
+
+  expect_equal(kday_before(1, -61387), -61389)
+  expect_equal(kday_before(3, -61387), -61394)
 })

@@ -2,5 +2,8 @@
 
 export(day_of_week_from_fixed)
 export(epoch)
+export(kday_after)
+export(kday_before)
+export(kday_nearest)
 export(kday_on_or_before)
 export(rd)
