@@ -10,7 +10,7 @@ epoch()
 a number indicating the start of the calendar
 }
 \description{
-For Rata Diem, R.D., it is 0 (but any other reference would do.)
+For Rata Die, R.D., it is 0 (but any other reference would do.)
 }
 \examples{
 \dontrun{

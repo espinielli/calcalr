@@ -24,7 +24,6 @@ kday_before(1, -61387)
 }
 \seealso{
 Other cycles of days helpers: 
-\code{\link{day_of_week_from_fixed}()},
 \code{\link{kday_after}()},
 \code{\link{kday_nearest}()},
 \code{\link{kday_on_or_before}()}

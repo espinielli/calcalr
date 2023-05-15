@@ -2,7 +2,7 @@
 % Please edit documentation in R/fixed_day_numbers.R
 \name{rd}
 \alias{rd}
-\title{Return rata diem (number of days since epoch) of moment in time, tee.}
+\title{Return the rata diem (number of days since epoch) of a moment in time}
 \usage{
 rd(tee)
 }
@@ -13,7 +13,7 @@ rd(tee)
 number of (eventually partial) days since epoch
 }
 \description{
-Return rata diem (number of days since epoch) of moment in time, tee.
+Return the rata diem (number of days since epoch) of a moment in time
 }
 \examples{
 \dontrun{
