@@ -19,16 +19,28 @@
     <loc>https://espinielli.github.io/calcalr/reference/amod.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/binary_search.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/day_of_week_from_fixed.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/degrees.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/epoch.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/final.html</loc>
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/fixed_from_moment.html</loc>
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/invert_angular.html</loc>
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/kday_after.html</loc>
@@ -47,6 +59,9 @@
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/nexti.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/radians.html</loc>
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/rd.html</loc>
