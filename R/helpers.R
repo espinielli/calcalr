@@ -99,3 +99,23 @@ final <- function(i, p) {
   final(i + 1, p)
 }
 
+
+#' Bisection search
+#'
+#' Bisection search for `x` in [lo, hi] such that condition `e` holds,
+#' `p` determines when to go left.
+#'
+#' @param lo Lower end of the search interval.
+#' @param hi Higher end of the search interval.
+#' @param p A function (named, anonymous or formula).
+#' @param e A function (named, anonymous or formula).
+#'
+#' @return A value inside the [lo, hi] interval.
+#' @export
+#'
+binary_search <- function(lo, hi, p, e) {
+  x = (lo + hi) / 2.0
+  if (p(lo, hi)) return(x)
+  if (e(x)) return(binary_search(lo, x, p, e))
+  return(binary_search(x, hi, p, e))
+}

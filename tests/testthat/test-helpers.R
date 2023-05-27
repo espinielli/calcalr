@@ -24,4 +24,21 @@ test_that("mod3 behavious", {
   expect_equal(final(0, \(i) i < 3), 2)
   expect_equal(final(0, \(i) i < 0), -1)
 
+  tol <- 1e-10
+  fminusy <- function(x, y) { fx(x) - y}
+  p <- function(a, b) {abs(fminusy(0.5 * (a+b), y)) <= tol}
+  e <-function(x) { fminusy(x, y) >= 0}
+
+    #  function y = f(x), f(x) = x, y0 = 1.0; solution is x0 = 1.0
+  fx <- function(x) {x}
+  y <- 1
+  x0 <- 1.0
+  expect_equal(binary_search(0.0, 3.1, p, e), x0,  tolerance = tol)
+
+  # new function y = f(x), f(x) = x**2 - 4*x + 4, y0 = 0.0; solution x0=2.0
+  y <-0.0
+  x0 <- 2.0
+  fx <- function(x) {x**2 -4 * x + 4.0}
+  expect_equal(binary_search(1.5, 2.5, p, e), x0,  tolerance = tol)
+
 })
