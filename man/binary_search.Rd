@@ -16,9 +16,9 @@ binary_search(lo, hi, p, e)
 \item{e}{A function (named, anonymous or formula).}
 }
 \value{
-A value inside the \link{lo, hi} interval.
+A value inside the \verb{[lo, hi]} interval.
 }
 \description{
-Bisection search for \code{x} in \link{lo, hi} such that condition \code{e} holds,
+Bisection search for \code{x} in \verb{[lo, hi]} such that condition \code{e} holds,
 \code{p} determines when to go left.
 }

@@ -102,7 +102,7 @@ final <- function(i, p) {
 
 #' Bisection search
 #'
-#' Bisection search for `x` in [lo, hi] such that condition `e` holds,
+#' Bisection search for `x` in `[lo, hi]` such that condition `e` holds,
 #' `p` determines when to go left.
 #'
 #' @param lo Lower end of the search interval.
@@ -110,7 +110,7 @@ final <- function(i, p) {
 #' @param p A function (named, anonymous or formula).
 #' @param e A function (named, anonymous or formula).
 #'
-#' @return A value inside the [lo, hi] interval.
+#' @return A value inside the `[lo, hi]` interval.
 #' @export
 #'
 binary_search <- function(lo, hi, p, e) {
@@ -118,4 +118,51 @@ binary_search <- function(lo, hi, p, e) {
   if (p(lo, hi)) return(x)
   if (e(x)) return(binary_search(lo, x, p, e))
   return(binary_search(x, hi, p, e))
+}
+
+#' Convert degrees to radians
+#'
+#' @param degs Degrees.
+#'
+#' @return A number
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' radians(30)
+#' }
+radians <- function(degs) {
+  degs * pi / 180
+}
+
+#' Convert  radians to degrees
+#'
+#' @param rads Radians.
+#'
+#' @return A number
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' degrees(pi)
+#' }
+degrees <- function(rads) {
+  rads * 180 / pi
+}
+
+#' Inverse of angular function
+#'
+#' @param f A function (named, anonymous or formula).
+#' @param y A value where to invert `f`.
+#' @param a Lower value of the search interval.
+#' @param b Upper value of the search interval.
+#' @param prec Required precision (default: 0.00001).
+#'
+#' @return A value.
+#' @export
+#'
+invert_angular <- function(f, y, a, b, prec = 1e-5) {
+  binary_search(a, b,
+                \(l, h) { (h - l) <= prec },
+                \(x) { ((f(x) - y) %% 360) < 180})
 }
