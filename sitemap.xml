@@ -16,18 +16,42 @@
     <loc>https://espinielli.github.io/calcalr/index.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/amod.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/day_of_week_from_fixed.html</loc>
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/epoch.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/fixed_from_moment.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/kday_after.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/kday_before.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/kday_nearest.html</loc>
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/kday_on_or_before.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/mod3.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/rd.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/summa.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/time_from_moment.html</loc>
   </url>
 </urlset>
