@@ -41,12 +41,6 @@ mod3 <- function(x, a, b) {
   a + ((x - a) %% (b - a))
 }
 
-
-# def summa(f, k, p):
-#   """Return the sum of f(i) from i=k, k+1, ... till p(i) holds true or 0.
-#     This is a tail recursive implementation."""
-# return 0 if not p(k) else f(k) + summa(f, k + 1, p)
-
 #' Return the sum of f(i) from i=k, k+1, ... till p(i) holds true or 0
 #'
 #' This is a tail recursive implementation.
@@ -69,4 +63,21 @@ summa <- function(f, k, p) {
   }
 
   f(k) + summa(f, k + 1, p)
+}
+
+#' Return first integer greater or equal to initial index, i, such that condition, p, holds
+#'
+#' @param i initial index
+#' @param p A function (named, anonymous or formula).
+#'
+#' @return an integer
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' nexti(0, \(i) i == 3)
+#' }
+nexti <- function(i, p) {
+  if (p(i) == TRUE) return(i)
+  nexti(i + 1, p)
 }
