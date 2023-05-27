@@ -3,6 +3,7 @@
 export(amod)
 export(day_of_week_from_fixed)
 export(epoch)
+export(final)
 export(fixed_from_moment)
 export(kday_after)
 export(kday_before)

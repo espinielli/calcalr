@@ -81,3 +81,21 @@ nexti <- function(i, p) {
   if (p(i) == TRUE) return(i)
   nexti(i + 1, p)
 }
+
+
+#' Return last integer greater or equal to initial index, i, such that condition, p, holds
+#'
+#' @inheritParams nexti
+#'
+#' @return an integer
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' final(0, \(i) i < 3)
+#' }
+final <- function(i, p) {
+  if (!p(i) == TRUE) return(i - 1)
+  final(i + 1, p)
+}
+

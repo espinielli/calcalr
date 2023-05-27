@@ -20,4 +20,8 @@ test_that("mod3 behavious", {
   expect_equal(nexti(0, \(i) i == 3), 3)
   expect_equal(nexti(0, \(i) i == 0), 0)
 
+  expect_equal(final(0, \(i) i == 3), -1)
+  expect_equal(final(0, \(i) i < 3), 2)
+  expect_equal(final(0, \(i) i < 0), -1)
+
 })
