@@ -92,5 +92,5 @@ fixed_from_moment <- function(tee) {
 #' time_from_moment(2.65)
 #' }
 time_from_moment <- function(tee){
-  mod(tee, 1)
+  tee %% 1
 }
