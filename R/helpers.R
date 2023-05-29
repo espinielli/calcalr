@@ -1,3 +1,20 @@
+#' Return the whole part of m/n towards negative infinity
+#'
+#' @param m The numerator.
+#' @param n The denominator.
+#'
+#' @return An Integer.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' quotient(4, 3)
+#' }
+quotient <- function(m, n) {
+  return(floor(m / n))
+}
+
+
 #' Adjusted remainder function
 #'
 #' Return the same as a % b with b instead of 0.
@@ -165,4 +182,50 @@ invert_angular <- function(f, y, a, b, prec = 1e-5) {
   binary_search(a, b,
                 \(l, h) { (h - l) <= prec },
                 \(x) { ((f(x) - y) %% 360) < 180})
+}
+
+
+#' Return the month of date `date`
+#'
+#' @param date A date.
+#'
+#' @return The month component of a date.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' standard_month(c(1, 2, 3))
+#' }
+standard_month <- function(date) {
+  return(date[2])
+}
+
+#' Return the day of date `date`
+#'
+#' @param date A date.
+#'
+#' @return The day component of a date.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' standard_day(c(1, 2, 3))
+#' }
+standard_day <- function(date) {
+  return(date[3])
+}
+
+#' Return the year of date `date`
+#'
+#' @param date A date.
+#'
+#' @return The year component of a date.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' standard_year(c(1, 2, 3))
+#' }
+standard_year <- function(date) {
+  return(date[1])
 }
