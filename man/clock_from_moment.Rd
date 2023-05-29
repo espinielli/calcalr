@@ -7,7 +7,7 @@
 clock_from_moment(tee)
 }
 \arguments{
-\item{tee}{A moment in time.}
+\item{tee}{a double indicating a moment in time}
 }
 \value{
 The clock time.

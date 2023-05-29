@@ -92,3 +92,27 @@ kday_before <- function(k, date) {
 
 
 
+# def nth_kday(n, k, g_date):
+#   """Return the fixed date of n-th k-day after Gregorian date 'g_date'.
+#     If n>0, return the n-th k-day on or after  'g_date'.
+#     If n<0, return the n-th k-day on or before 'g_date'.
+#     If n=0, return BOGUS.
+#     A k-day of 0 means Sunday, 1 means Monday, and so on."""
+# if n > 0:
+#   return 7*n + kday_before(k, fixed_from_gregorian(g_date))
+# elif n < 0:
+#   return 7*n + kday_after(k, fixed_from_gregorian(g_date))
+# else:
+#   return BOGUS
+#
+# # see lines 892-897 in calendrica-3.0.cl
+# def first_kday(k, g_date):
+#   """Return the fixed date of first k-day on or after Gregorian date 'g_date'.
+#     A k-day of 0 means Sunday, 1 means Monday, and so on."""
+# return nth_kday(1, k, g_date)
+#
+# # see lines 899-904 in calendrica-3.0.cl
+# def last_kday(k, g_date):
+#   """Return the fixed date of last k-day on or before Gregorian date 'g_date'.
+#     A k-day of 0 means Sunday, 1 means Monday, and so on."""
+# return nth_kday(-1, k, g_date)

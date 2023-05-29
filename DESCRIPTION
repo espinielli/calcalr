@@ -18,7 +18,9 @@ LazyData: true
 RoxygenNote: 7.2.3
 Roxygen: list(markdown = TRUE)
 Suggests: 
-    testthat (>= 3.0.0)
+    readr,
+    stringr,
+    testthat (>= 3.0.0),
+    zoo
 Config/testthat/edition: 3
-Imports: 
 URL: https://espinielli.github.io/calcalr/, https://github.com/espinielli/calcalr

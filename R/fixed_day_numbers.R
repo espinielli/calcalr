@@ -67,7 +67,7 @@ day_of_week_from_fixed <- function(date) {
 
 #' Return fixed date from moment
 #'
-#' @param tee a moment in time
+#' @inheritParams rd
 #'
 #' @return a Rata Die
 #' @export
@@ -82,7 +82,7 @@ fixed_from_moment <- function(tee) {
 
 #' Return time from moment 'tee'
 #'
-#' @inheritParams fixed_from_moment
+#' @inheritParams rd
 #'
 #' @return factional part of a day
 #' @export
@@ -160,7 +160,7 @@ seconds <- function(clock) {
 
 #' Return clock time hour:minute:second from moment 'tee'
 #'
-#' @param tee A moment in time.
+#' @inheritParams rd
 #'
 #' @return The clock time.
 #' @export
@@ -180,7 +180,7 @@ clock_from_moment <- function(tee) {
 
 #' Return time from moment `tee`
 #'
-#' @inheritParams clock_from_moment
+#' @inheritParams rd
 #'
 #' @return The time component of a moment.
 #' @export
@@ -209,4 +209,100 @@ time_from_clock <- function(hms) {
   m <- minute(hms)
   s <- seconds(hms)
   return(1/24 * (h + ((m + (s / 60)) / 60)))
+}
+
+
+JD_EPOCH <- rd(-1721424.5)
+
+
+#' Return the moment corresponding to the Julian day number `jd`
+#'
+#' @param jd The Julian day.
+#'
+#' @return The moment representation of `jd`.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' moment_from_jd(123.456)
+#' }
+moment_from_jd <- function(jd) {
+  return(jd + JD_EPOCH)
+}
+
+#' Return the Julian day number corresponding to moment `tee`
+#'
+#' @inheritParams rd
+#'
+#' @return The Julian day number.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' jd_from_moment(123.456)
+#' }
+jd_from_moment <- function(tee) {
+  return(tee - JD_EPOCH)
+}
+
+#' Return the fixed date corresponding to Julian day number `jd`
+#'
+#' @inheritParams moment_from_jd
+#'
+#' @return A fixed date.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' fixed_from_jd(123.456)
+#' }
+fixed_from_jd <- function(jd) {
+  return(floor(moment_from_jd(jd)))
+}
+
+#' Return the Julian day number corresponding to fixed date `rd`
+#'
+#' @inheritParams kday_on_or_before
+#'
+#' @return A Julian day.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' jd_from_fixed(123.456)
+#' }
+jd_from_fixed <- function(date) {
+  return(jd_from_moment(date))
+}
+
+MJD_EPOCH <- rd(678576)
+
+#' Return the fixed date corresponding to modified Julian day `mjd`
+#'
+#' @param mjd The modified Julian day.
+#'
+#' @return A fixed date.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' fixed_from_mjd(123.456)
+#' }
+fixed_from_mjd <- function(mjd) {
+  return(mjd + MJD_EPOCH)
+}
+
+#' Return the modified Julian day corresponding to fixed date `rd`
+#'
+#' @inheritParams kday_on_or_before
+#'
+#' @return The modified Julian day.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' mjd_from_fixed(123.456)
+#' }
+mjd_from_fixed <- function(date) {
+  return(date - MJD_EPOCH)
 }

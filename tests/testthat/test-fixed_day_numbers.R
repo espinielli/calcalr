@@ -28,3 +28,18 @@ test_that("time_from_clock", {
   expect_equal(time_from_clock(c(18, 0, 0)), 0.75, tolerance = 1e-2)
   expect_equal(time_from_clock(c(19, 12, 0)), 0.8, tolerance = 1e-2)
 })
+
+test_that("weekday: Appendix C", {
+  d1 <- read_test_data("dates1.csv")
+  expect_equal(name_of_day_of_week(day_of_week_from_fixed(d1$rd)), d1$day)
+})
+
+
+test_that("(modified) julian day: Appendix C", {
+  d1 <- read_test_data("dates1.csv")
+  expect_equal(jd_from_fixed(d1$rd), d1$jd)
+  expect_equal(fixed_from_jd(d1$jd), d1$rd)
+
+  expect_equal(mjd_from_fixed(d1$rd), d1$mjd)
+  expect_equal(fixed_from_mjd(d1$mjd), d1$rd)
+})

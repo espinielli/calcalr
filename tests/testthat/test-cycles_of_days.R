@@ -20,3 +20,4 @@ test_that("kdays of week", {
   expect_equal(kday_before(1, -61387), -61389)
   expect_equal(kday_before(3, -61387), -61394)
 })
+

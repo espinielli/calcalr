@@ -9,7 +9,7 @@ time_from_moment(tee)
 time_from_moment(tee)
 }
 \arguments{
-\item{tee}{a moment in time}
+\item{tee}{a double indicating a moment in time}
 }
 \value{
 factional part of a day
