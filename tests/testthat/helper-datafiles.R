@@ -1,6 +1,6 @@
-library(readr)
-library(stringr)
-library(zoo)
+suppressMessages(library(readr))
+suppressMessages(library(stringr))
+suppressMessages(library(zoo))
 
 datafile_col_names <- function(filename) {
   l1 <- read_csv(test_path("testdata", filename),

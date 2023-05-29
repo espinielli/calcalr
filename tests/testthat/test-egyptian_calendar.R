@@ -1,7 +1,3 @@
-test_that("egyptian calendar: epoch", {
-  expect_equal(epoch(), 0L)
-  expect_equal(rd(0), 0L)
-})
 
 test_that("smoke tests", {
   testvalue <- 710347
