@@ -22,6 +22,9 @@
     <loc>https://espinielli.github.io/calcalr/reference/binary_search.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/clock_from_moment.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/day_of_week_from_fixed.html</loc>
   </url>
   <url>
@@ -35,6 +38,9 @@
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/fixed_from_moment.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/hour.html</loc>
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/index.html</loc>
@@ -55,6 +61,9 @@
     <loc>https://espinielli.github.io/calcalr/reference/kday_on_or_before.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/minute.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/mod3.html</loc>
   </url>
   <url>
@@ -67,9 +76,18 @@
     <loc>https://espinielli.github.io/calcalr/reference/rd.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/seconds.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/summa.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/time_from_clock.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/time_from_moment.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/time_of_day.html</loc>
   </url>
 </urlset>
