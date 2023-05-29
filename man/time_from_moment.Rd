@@ -5,18 +5,27 @@
 \title{Return time from moment 'tee'}
 \usage{
 time_from_moment(tee)
+
+time_from_moment(tee)
 }
 \arguments{
 \item{tee}{a moment in time}
 }
 \value{
 factional part of a day
+
+The time component of a moment.
 }
 \description{
 Return time from moment 'tee'
+
+Return time from moment \code{tee}
 }
 \examples{
 \dontrun{
 time_from_moment(2.65)
+}
+\dontrun{
+time_from_moment(4.3)
 }
 }

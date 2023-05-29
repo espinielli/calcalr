@@ -12,7 +12,9 @@ test_that("mod3 behavious", {
 
   expect_equal(mod3(7, 4, 9), 7)
   expect_equal(mod3(1, 4, 9), 6)
+})
 
+test_that("summa, nexti and final", {
   expect_equal(summa(\(x) 1, 1, \(i) i <= 4), 4)
   expect_equal(summa(\(x) 1, 0, \(i) i >= 4), 0)
   expect_equal(summa(\(x) x**2, 1, \(i) i <= 4), 30)
@@ -23,7 +25,9 @@ test_that("mod3 behavious", {
   expect_equal(final(0, \(i) i == 3), -1)
   expect_equal(final(0, \(i) i < 3), 2)
   expect_equal(final(0, \(i) i < 0), -1)
+})
 
+test_that("binary_search & Co.", {
   tol <- 1e-10
   fminusy <- function(x, y) { fx(x) - y}
   p <- function(a, b) {abs(fminusy(0.5 * (a + b), y)) <= tol}
@@ -45,3 +49,4 @@ test_that("mod3 behavious", {
   expect_equal(invert_angular(tan, 1.0, 0, radians(60.0), prec = tol), radians(45.0), tolerance = tol)
 
 })
+
