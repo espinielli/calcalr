@@ -19,6 +19,12 @@
     <loc>https://espinielli.github.io/calcalr/reference/amod.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/armenian_date.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/armenian_from_fixed.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/binary_search.html</loc>
   </url>
   <url>
@@ -31,10 +37,22 @@
     <loc>https://espinielli.github.io/calcalr/reference/degrees.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/egyptian_date.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/egyptian_from_fixed.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/epoch.html</loc>
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/final.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/fixed_from_armenian.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/fixed_from_egyptian.html</loc>
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/fixed_from_jd.html</loc>
@@ -88,6 +106,9 @@
     <loc>https://espinielli.github.io/calcalr/reference/nexti.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/quotient.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/radians.html</loc>
   </url>
   <url>
@@ -95,6 +116,15 @@
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/seconds.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/standard_day.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/standard_month.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/standard_year.html</loc>
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/summa.html</loc>
