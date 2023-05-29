@@ -37,6 +37,12 @@
     <loc>https://espinielli.github.io/calcalr/reference/final.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/fixed_from_jd.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/fixed_from_mjd.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/fixed_from_moment.html</loc>
   </url>
   <url>
@@ -47,6 +53,12 @@
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/invert_angular.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/jd_from_fixed.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/jd_from_moment.html</loc>
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/kday_after.html</loc>
@@ -64,7 +76,13 @@
     <loc>https://espinielli.github.io/calcalr/reference/minute.html</loc>
   </url>
   <url>
+    <loc>https://espinielli.github.io/calcalr/reference/mjd_from_fixed.html</loc>
+  </url>
+  <url>
     <loc>https://espinielli.github.io/calcalr/reference/mod3.html</loc>
+  </url>
+  <url>
+    <loc>https://espinielli.github.io/calcalr/reference/moment_from_jd.html</loc>
   </url>
   <url>
     <loc>https://espinielli.github.io/calcalr/reference/nexti.html</loc>
